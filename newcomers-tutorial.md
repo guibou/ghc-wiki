@@ -298,8 +298,8 @@ prepareRhs env (Cast rhs co)    -- see Note [Float coercions]
 
 {-
 
-Note [Float coercions]
-~~~~~~~~~~~~~~~~~~~~~~
+Note [Float coercions (unlifted)]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 When we find the binding
         x = e `cast` co
 we'd like to transform it to
